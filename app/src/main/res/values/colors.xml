@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#50c03a</color>
+    <color name="colorPrimaryDark">#50c03a</color>
+    <color name="colorAccent">#1EF028</color>
+    <color name="titleTextColor">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="freezeTextColor">#015478</color>
+    <color name="red">#ff0000</color>
+</resources>
