@@ -6,8 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -17,15 +15,10 @@ import com.example.myapplication.R;
 
 public class NFCFragment extends Fragment {
 
-    private NFCViewModel nfcViewModel;
-
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        nfcViewModel =
-                ViewModelProviders.of(this).get(NFCViewModel.class);
         final View root = inflater.inflate(R.layout.fragment_nfc, container, false);
 
-        ImageButton trImageButton = root.findViewById(R.id.transportImageButton);
         Log.d("button", "findSuccess");
         return root;
     }
