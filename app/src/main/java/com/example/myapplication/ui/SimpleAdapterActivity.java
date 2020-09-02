@@ -1,9 +1,7 @@
 package com.example.myapplication.ui;
 
-import android.app.Activity;
-import android.content.Context;
+import android.app.ListActivity;
 import android.os.Bundle;
-import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 import com.example.myapplication.R;
@@ -13,17 +11,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Detail0Activity extends Activity {
-    private ListView listview;
+public class SimpleAdapterActivity extends ListActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        // 每个activity需获取
-        Context context = getApplicationContext();
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.detail_page0_layout);
-        listview = findViewById(R.id.list_view);
+
         SimpleAdapter adapter = new SimpleAdapter(this, getData(), R.layout.list_item, new String[] { "title",  "img" }, new int[] { R.id.foodName, R.id.foodPicture });
-        listview.setAdapter(adapter);
+        setListAdapter(adapter);
     }
 
     private List<Map<String, Object>> getData() {
