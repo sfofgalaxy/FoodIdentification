@@ -26,14 +26,11 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/thumbsup_tittle_bg"
         android:background="#FFDCDCDC"
-        android:orientation="vertical" >
-        <TextView
-            android:id="@+id/thumbsup_note1"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/list_view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="关注Warfare Strike粉丝页"
-            android:textColor="@android:color/black"
-            android:textSize="16sp" />
+            android:layout_height="match_parent" />
 
     </LinearLayout>
 </RelativeLayout>

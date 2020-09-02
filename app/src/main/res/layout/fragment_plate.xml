@@ -19,8 +19,7 @@
     app:layout_constraintBottom_toTopOf="@+id/NFCView"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent">
-
-</View>
+    </View>
 
     <View
         android:id="@+id/NFCView"
@@ -35,20 +34,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-
     </View>
 
-    <TextView
-        android:id="@+id/NFCPayTip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/NFCPayTipString"
-        android:textColor="#FFFFCC"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/NFCTipView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/NFCTipView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

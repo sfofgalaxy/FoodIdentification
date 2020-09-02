@@ -186,7 +186,6 @@
         android:id="@+id/healthCheck"
         android:layout_width="80dp"
         android:layout_height="36dp"
-        android:background="@drawable/button_shape_blue"
         android:text="健康核验"
         android:textColor="#686868"
         app:layout_constraintBottom_toBottomOf="@+id/codeTipView"
