@@ -1,14 +1,14 @@
-package com.example.myapplication.ui.nfc;
+package com.example.myapplication.ui.plate;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class NFCViewModel extends ViewModel {
+public class PlateViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public NFCViewModel() {
+    public PlateViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is nfc fragment");
     }

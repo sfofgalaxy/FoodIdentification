@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFCC"
-    tools:context=".ui.nfc.NFCFragment">
+    tools:context=".ui.plate.PlateFragment">
 
     <View
     android:id="@+id/NFCTipView"

@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/navigation_nfc"
-        android:name="com.example.myapplication.ui.nfc.NFCFragment"
+        android:name="com.example.myapplication.ui.plate.PlateFragment"
         android:label="@string/title_nfc"
-        tools:layout="@layout/fragment_nfc" />
+        tools:layout="@layout/fragment_plate" />
 </navigation>

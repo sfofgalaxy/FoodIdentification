@@ -2,7 +2,6 @@ package com.example.myapplication.ui.qrCode;
 
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -19,7 +18,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.myapplication.R;
 import com.example.myapplication.config.Config;
-import com.example.myapplication.ui.nfc.NFCViewModel;
+import com.example.myapplication.ui.plate.PlateViewModel;
 import com.example.myapplication.utils.BitMapUtil;
 import com.example.myapplication.utils.HttpRequestUtil;
 import com.example.myapplication.utils.JsonUtil;
@@ -33,7 +32,7 @@ import java.util.Map;
 
 public class QRCodeFragment extends Fragment {
 
-    private NFCViewModel nfcViewModel;
+    private PlateViewModel plateViewModel;
     private String mGetHealthStateUrl = Config.getFullUrl("/health/checkHealth");
     private Context context;
 
@@ -41,8 +40,8 @@ public class QRCodeFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
 
         context = getActivity().getApplicationContext();
-        nfcViewModel =
-                ViewModelProviders.of(this).get(NFCViewModel.class);
+        plateViewModel =
+                ViewModelProviders.of(this).get(PlateViewModel.class);
         final View root = inflater.inflate(R.layout.fragment_qrcode, container, false);
 
         ImageView qrCodeImageView = root.findViewById(R.id.qrcodeImage);
