@@ -1,7 +1,6 @@
 package com.example.myapplication.ui;
 
 import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -14,15 +13,14 @@ import java.util.List;
 import java.util.Map;
 
 public class Detail0Activity extends Activity {
-    private ListView listview;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         // 每个activity需获取
-        Context context = getApplicationContext();
+        getApplicationContext();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detail_page0_layout);
-        listview = findViewById(R.id.list_view);
-        SimpleAdapter adapter = new SimpleAdapter(this, getData(), R.layout.list_item, new String[] { "title",  "img" }, new int[] { R.id.foodName, R.id.foodPicture });
+        ListView listview = findViewById(R.id.list_view);
+        SimpleAdapter adapter = new SimpleAdapter(this, getData(), R.layout.list_item, new String[] { "foodName",  "img", "description" }, new int[] {R.id.foodName, R.id.foodPicture, R.id.description});
         listview.setAdapter(adapter);
     }
 
@@ -30,18 +28,21 @@ public class Detail0Activity extends Activity {
 //map.put(参数名字,参数值)
         List<Map<String, Object>> list = new ArrayList<>();
         Map<String, Object> map = new HashMap<>();
-        map.put("title", "摩托罗拉");
+        map.put("foodName", "西红柿炒鸡蛋");
         map.put("img", R.drawable.abc);
+        map.put("description", "西红柿炒鸡蛋的描述");
         list.add(map);
 
-        map = new HashMap<String, Object>();
-        map.put("title", "诺基亚");
+        map = new HashMap<>();
+        map.put("foodName", "干椒辣子鸡");
         map.put("img", R.drawable.abc);
+        map.put("description", "干椒辣子鸡的描述");
         list.add(map);
 
-        map = new HashMap<String, Object>();
-        map.put("title", "三星");
+        map = new HashMap<>();
+        map.put("foodName", "水煮肉片");
         map.put("img", R.drawable.abc);
+        map.put("description", "水煮肉片的描述");
         list.add(map);
         return list;
     }
