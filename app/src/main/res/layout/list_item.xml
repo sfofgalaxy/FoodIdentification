@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     <ImageView
@@ -10,19 +10,15 @@
         android:layout_height="75dp"
         android:layout_margin="5dp"
         />
-    <LinearLayout
+    <TextView
+        android:id="@+id/foodName"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/description"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/foodName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="24sp"
-            />
-        <TextView
-            android:id="@+id/description"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="12sp"/>
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        android:textSize="12sp"/>
 </LinearLayout>
