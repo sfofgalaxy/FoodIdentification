@@ -1,14 +1,14 @@
-package com.example.myapplication.ui.qrCode;
+package com.example.myapplication.ui.camera;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class QRCodeViewModel extends ViewModel {
+public class CameraViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public QRCodeViewModel() {
+    public CameraViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is qrCode fragment");
     }

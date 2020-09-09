@@ -1,6 +1,5 @@
 package com.example.myapplication.ui.plate;
 
-import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
@@ -13,7 +12,4 @@ public class PlateViewModel extends ViewModel {
         mText.setValue("This is nfc fragment");
     }
 
-    public LiveData<String> getText() {
-        return mText;
-    }
 }

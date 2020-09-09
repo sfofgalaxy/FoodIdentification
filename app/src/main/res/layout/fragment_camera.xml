@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    tools:context=".ui.plate.PlateFragment">
-
+    android:background="@color/white"
+    tools:context=".ui.camera.CameraFragment">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="拍照识别"
+        android:text="餐盘识别"
         android:textColor="@color/black"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,9 +18,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.102" />
-
     <Button
-        android:id="@+id/bt1"
+        android:id="@+id/bt3"
         android:layout_width="127dp"
         android:layout_height="84dp"
         android:background="@drawable/btn_bg"
@@ -34,7 +32,7 @@
         app:layout_constraintVertical_bias="0.32" />
 
     <Button
-        android:id="@+id/bt2"
+        android:id="@+id/bt4"
         android:layout_width="137dp"
         android:layout_height="76dp"
         android:background="@drawable/btn_bg"
@@ -45,6 +43,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.693" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
