@@ -25,6 +25,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 
 import com.example.myapplication.R;
+import com.example.myapplication.ui.Detail0Activity;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -76,7 +77,7 @@ public class PlateFragment extends Fragment {
                     Bundle extras = data.getExtras();
                     Bitmap bitmap = (Bitmap) extras.get("data");
                     //imageView.setImageBitmap(bitmap);
-
+                    startActivity(new Intent(getActivity(), Detail0Activity.class));
                     //pzfxgg在这里跳转到相机拍到的照片
                 }
                 break;
@@ -149,7 +150,7 @@ public class PlateFragment extends Fragment {
             Bitmap bitmap = BitmapFactory.decodeFile(imagePath);
             //imageView.setImageBitmap(bitmap);
 
-
+            startActivity(new Intent(getActivity(), Detail0Activity.class));
             //pzfxgg在这里跳转到相册照片的识别结果
         } else {
             Toast.makeText(getActivity(), "failed to get image", Toast.LENGTH_SHORT).show();
