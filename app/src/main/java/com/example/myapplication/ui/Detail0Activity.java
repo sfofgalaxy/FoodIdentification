@@ -28,21 +28,23 @@ public class Detail0Activity extends Activity {
 //map.put(参数名字,参数值)
         List<Map<String, Object>> list = new ArrayList<>();
         Map<String, Object> map = new HashMap<>();
-        map.put("foodName", "西红柿炒鸡蛋");
-        map.put("img", R.drawable.tomato);
-        map.put("description", "\u3000\u3000西红柿炒鸡蛋，又名番茄炒蛋，是许多百姓家庭中一道普通的大众菜肴。烹饪方法简单易学，营养搭配合理。每100g的西红柿可食用部分中，含热能79.49KJ 蛋白质0.9g 脂肪0.2g 糖类3.5g 膳食纤维0.5g\n");
+        map.put("foodName", "素炒生菜");
+        map.put("img", R.drawable.vegetable);
+        map.put("description", "\u3000\u3000炒生菜是一道美食，由生菜等材料制作而成。原材料：生菜，姜丝\n" +
+                "配料：盐，生抽，葵花油\n");
         list.add(map);
 
         map = new HashMap<>();
-        map.put("foodName", "干椒辣子鸡");
-        map.put("img", R.drawable.spicy);
-        map.put("description", "\u3000\u3000辣子鸡，是一道经典的川菜。一般以整鸡为主料，加上葱、干辣椒、花椒、盐、胡椒、味精等多种材料精制而成，虽然是同一道菜，各地制作也各有特色。\n");
+        map.put("foodName", "卤鸭腿");
+        map.put("img", R.drawable.duck);
+        map.put("description", "\u3000\u3000卤鸭腿是一种传统酱卤制品，深受广大消费者喜爱。卤鸭腿以鸭腿和香辛料为主要食材，口感紧实，耐咀嚼；具有经卤制后的良好的滋味与气味，无异味。\n");
         list.add(map);
 
         map = new HashMap<>();
-        map.put("foodName", "水煮肉片");
-        map.put("img", R.drawable.water);
-        map.put("description", "\u3000\u3000水煮肉片，是一道地方新创名菜，起源于自贡，发扬于西南，属于川菜中著名的家常菜。水煮肉片肉味香辣，软嫩，易嚼。吃时肉嫩菜鲜 ，汤红油亮，麻辣味浓，最宜下饭，为家常美食之一。特色是“麻、辣、鲜、香”。\n");
+        map.put("foodName", "麻婆豆腐");
+        map.put("img", R.drawable.tofu);
+        map.put("description", "\u3000\u3000麻婆豆腐，是四川省传统名菜之一，属于川菜，主料为：豆腐，辅料为：蒜苗、牛肉沫(其他肉也可以)，调料为：豆瓣、辣椒面和花椒面、酱油等，麻来自花椒，辣来自辣椒面，此菜成菜麻、辣、鲜、香、烫、翠、嫩、酥，将川菜麻辣味型的特点展现的淋漓尽致.\n" +
+                "    营养成分：热量（1912.55千卡）、蛋白质（106.58克）、脂肪（144.00克）、碳水化合物 （49.25克）\n");
         list.add(map);
         return list;
     }
